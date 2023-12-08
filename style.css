@@ -16,15 +16,35 @@ body {
   min-height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: baseline;
-  align-items: baseline;
-  background: rgb(19, 19, 19);
+  justify-content: center;
+  align-items: center;
+  background: #4070F4;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark {
+  background: #18191a;
 }
 
 .btn {
   position: relative;
   font-size: 1em;
   padding: 0.25em 1em;
+  border-radius: 0px;
+  background: var(--gradient);
+  text-decoration: none;
+  text-transform: lowercase;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  left: 1em;
+  top: 0.5em;
+}
+
+.btn2 {
+  position: relative;
+  font-size: 1em;
+  padding: 0.25em 1.05em;
   border-radius: 0px;
   background: var(--gradient);
   text-decoration: none;
@@ -56,4 +76,38 @@ body {
     width: 500px;
     opacity: 0;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.toggle {
+  position: relative;
+  height: 130px;
+  width: 300px;
+  border-radius: 100px;
+  background-color: #fff;
+  box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.toggle::before {
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  background-color: #4070F4;
+  border-radius: 500px;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle.active::before {
+  background-color: #18191a;
+  left: calc(100% - 110px - 14px);
 }
