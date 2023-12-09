@@ -18,12 +18,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #4070F4;
+  background: #18191a;
   transition: all 0.3s ease-in-out;
 }
 
 body.dark {
-  background: #18191a;
+  background: greenyellow;
 }
 
 .btn {
@@ -53,6 +53,21 @@ body.dark {
   font-family: "Poppins", sans-serif;
   overflow: hidden;
   right: 41em;
+  bottom: 21em;
+}
+
+.btn3 {
+  position: relative;
+  font-size: 1em;
+  padding: 0.25em 1.05em;
+  border-radius: 0px;
+  background: var(--gradient);
+  text-decoration: none;
+  text-transform: lowercase;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  left: 31em;
   bottom: 21em;
 }
 
@@ -101,7 +116,7 @@ body.dark {
   position: absolute;
   height: 24px;
   width: 24px;
-  background-color: #4070F4;
+  background-color: #18191a;
   border-radius: 500px;
   top: 50%;
   left: 4px;
@@ -110,6 +125,6 @@ body.dark {
 }
 
 .toggle.active::before {
-  background-color: #18191a;
+  background-color: greenyellow;
   left: calc(100% - 24px - 4px);
 }
