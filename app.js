@@ -5,7 +5,7 @@ let leftright=Math.floor(Math.random()*2)
 let right =leftright?true:false
 let updown=Math.floor(Math.random()*2)
 let up =updown?true:false
-let velocity=1
+let velocity=1.6
 
 let ballmove=setInterval(()=>{
     let ballbounds=ball.getBoundingClientRect()
